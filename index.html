@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>BlueBot AI</title>
+     <link rel="stylesheet" href="style.css" />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+     <!-- Video Intro Section -->
+     <div id="video-intro" class="video-intro">
+          <video id="intro-video" src="Ahmed_video.mp4" autoplay muted playsinline></video>
+          <button id="skip-video" class="skip-video">Skip</button>
+     </div>
+     <!-- Loader (Robot) -->
+     <div id="loader" class="loader">
+          <div class="robot-loader">
+               <div class="robot-eye">
+                    <span class="loader-text">BlueBot AI</span>
+               </div>
+               <div class="robot-body"></div>
+          </div>
+     </div>
+
+     <!-- Welcome Screen -->
+     <div id="welcome" class="welcome-screen">
+          <div class="welcome-content">
+               <h1>Welcome to <span class="brand">BlueBot AI</span></h1>
+               <p>Created by <span class="creator">Ahmed Ali Mughal</span></p>
+               <button id="enter-btn">Enter</button>
+          </div>
+     </div>
+
+     <!-- Main Content -->
+     <nav class="navbar">
+          <div class="logo">🤖 BlueBot AI</div>
+          <button class="nav-toggle" id="nav-toggle" aria-label="Open navigation">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
+          </button>
+          <ul class="nav-links">
+               <li><a href="#home-section">Home</a></li>
+               <li><a href="#about-section">About</a></li>
+               <li><a href="#courses-section">Courses</a></li>
+               <li><a href="#contact-section">Contact</a></li>
+          </ul>
+          <form class="nav-search" id="nav-search-form" autocomplete="off">
+               <input type="text" id="nav-search-input" placeholder="Search..." />
+               <button type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          <div class="theme-toggle" id="theme-toggle">
+               <span class="toggle-icon">🌙</span>
+          </div>
+          <div class="social-icons">
+               <a href="#" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+               <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+               <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+     </nav>
+     <div id="main-content" class="hidden">
+          <section class="hero" id="home-section">
+               <div class="robot-hero">
+                    <!-- Animated Robot SVG -->
+                    <svg id="main-robot" width="140" height="180" viewBox="0 0 140 180" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                         <!-- Body -->
+                         <ellipse cx="70" cy="120" rx="45" ry="55" fill="#1e3a5c" stroke="#00bfff" stroke-width="4" />
+                         <!-- Head -->
+                         <ellipse cx="70" cy="60" rx="38" ry="38" fill="#00bfff" stroke="#1e3a5c" stroke-width="4" />
+                         <!-- Eyes -->
+                         <ellipse cx="55" cy="60" rx="7" ry="10" fill="#fff" />
+                         <ellipse cx="85" cy="60" rx="7" ry="10" fill="#fff" />
+                         <ellipse cx="55" cy="62" rx="3" ry="4" fill="#1e3a5c" />
+                         <ellipse cx="85" cy="62" rx="3" ry="4" fill="#1e3a5c" />
+                         <!-- Smile -->
+                         <path d="M60 75 Q70 85 80 75" stroke="#fff" stroke-width="3" fill="none" />
+                         <!-- Left Arm (waving) -->
+                         <g id="robot-arm">
+                              <rect x="15" y="80" width="12" height="45" rx="6" fill="#00bfff" stroke="#1e3a5c"
+                                   stroke-width="3" />
+                              <ellipse cx="21" cy="125" rx="7" ry="7" fill="#fff" stroke="#1e3a5c" stroke-width="2" />
+                         </g>
+                         <!-- Right Arm -->
+                         <rect x="113" y="80" width="12" height="45" rx="6" fill="#00bfff" stroke="#1e3a5c"
+                              stroke-width="3" />
+                         <ellipse cx="119" cy="125" rx="7" ry="7" fill="#fff" stroke="#1e3a5c" stroke-width="2" />
+                    </svg>
+               </div>
+               <h2>Meet your AI companion</h2>
+               <p>Experience the future with BlueBot AI</p>
+          </section>
+          <section class="about-section" id="about-section">
+               <h3>About BlueBot AI</h3>
+               <div class="about-story">
+                    <p>
+                         BlueBot AI is not just a website, it's a futuristic experience designed to bring the power of
+                         Artificial Intelligence to everyone. Our journey started with a dream: to make AI accessible,
+                         friendly, and fun for all. The heart of BlueBot is our animated robot, who guides you through
+                         learning, chatting, and exploring the world of AI.<br><br>
+                         This project was passionately crafted by <b>Ahmed Ali Mughal</b>, who believes that technology
+                         should inspire and empower. From the animated mascot to the interactive chat and courses, every
+                         detail is made with love and creativity.<br><br>
+                         Whether you're a student, a tech enthusiast, or just curious, BlueBot AI is your VIP gateway to
+                         the future. Join us, learn, and let’s shape tomorrow together!
+                    </p>
+               </div>
+          </section>
+          <section class="ai-courses" id="courses-section">
+               <h3>Learn AI with BlueBot</h3>
+               <div class="course-cards">
+                    <div class="course-card">
+                         <div class="card-icon"><i class="fas fa-brain"></i></div>
+                         <h4>AI Basics</h4>
+                         <p>Start your journey with the fundamentals of Artificial Intelligence.</p>
+                         <button class="enroll-btn">Enroll</button>
+                    </div>
+                    <div class="course-card">
+                         <div class="card-icon"><i class="fas fa-robot"></i></div>
+                         <h4>Machine Learning</h4>
+                         <p>Master ML concepts and build your own smart models.</p>
+                         <button class="enroll-btn">Enroll</button>
+                    </div>
+                    <div class="course-card">
+                         <div class="card-icon"><i class="fas fa-comments"></i></div>
+                         <h4>AI Chatbots</h4>
+                         <p>Design and deploy intelligent chatbots for real-world use.</p>
+                         <button class="enroll-btn">Enroll</button>
+                    </div>
+               </div>
+          </section>
+          <section class="ai-chatbox-section" id="contact-section">
+               <h3>BlueBot AI Chat</h3>
+               <div class="ai-chatbox vip">
+                    <div class="chat-header">BlueBot AI <span class="vip-badge">VIP</span></div>
+                    <div class="chat-messages" id="chat-messages">
+                         <div class="message bot">Hi! I'm BlueBot. How can I help you with AI today?</div>
+                    </div>
+                    <form class="chat-input-area" id="chat-form">
+                         <input type="text" id="chat-input" placeholder="Ask me anything about AI..."
+                              autocomplete="off" />
+                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+               </div>
+          </section>
+          <!-- Footer -->
+          <footer class="footer vip modern-footer">
+               <div class="footer-main">
+                    <div class="footer-logo">🤖 BlueBot AI</div>
+                    <div class="footer-links">
+                         <a href="#">Home</a>
+                         <a href="#">About</a>
+                         <a href="#">Courses</a>
+                         <a href="#">Contact</a>
+                    </div>
+                    <div class="footer-socials">
+                         <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                         <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                         <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+               </div>
+               <div class="footer-bottom">
+                    <span class="footer-vip">Experience by Ahmed Ali Mughal</span>
+                    <span class="footer-copy">&copy; 2025 BlueBot AI. All rights reserved.</span>
+               </div>
+          </footer>
+     </div>
+
+     <script src="script.js"></script>
+</body>
+
+</html>
